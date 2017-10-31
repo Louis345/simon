@@ -1,0 +1,112 @@
+/** position layout **/
+
+.App {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.board {
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  top: 10px;
+  box-shadow: inset 5px 4px 15px 0px #333333,
+    inset -5px 4px 20px 0px #333333,
+    inset 5px -4px 20px 0px #333333;
+}
+#panel {
+  background: linear-gradient(200deg, grey 5%, white 30%, grey 90%);
+  height: 300px;
+  width: 300px;
+  border: 10px solid black;
+  border-radius: 50%;
+  position: absolute;
+}
+.row {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+}
+.row div {
+  width: 50%;
+  height: 100%;
+}
+.buttons {
+  width: 44%;
+  height: 44%;
+  border: 10px solid black;
+}
+.scoreboard {
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 44px;
+  width: 60px;
+  background: #32050C;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -43px;
+}
+.text-container {
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  margin-left: 66px;
+}
+#panel h1 {
+  font-size: 61px;
+  text-align: center;
+}
+.text-container p {
+  padding: 0 5px;
+}
+/** end of position layout **/
+/*** button colors **/
+#green {
+  border-top-left-radius: 100%;
+  background-color: #009900;
+  box-shadow: inset 0px 0px 70px 0px #595959;
+}
+#red {
+  border-top-right-radius: 100%;
+  background-color: red;
+  box-shadow: inset 0px 0px 70px 0px #595959;
+}
+#yellow {
+  border-bottom-right-radius: 100%;
+  background-color: yellow;
+  box-shadow: inset 0px 0px 70px 0px #595959;
+}
+#blue {
+  border-bottom-left-radius: 100%;
+  background-color: blue;
+  box-shadow: inset 0px 0px 70px 0px #595959;
+}
+/** game board controls design **/
+.controls {
+  border: 4px solid black;
+  border-radius: 50%;
+  height: 19px;
+  width: 19px;
+  background: #FC0102;
+  margin: 10px;
+}
+.gameboard {
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 44px;
+  width: 60px;
+  background: #32050C;
+}
