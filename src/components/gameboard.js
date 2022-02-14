@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "./Button";
-import Gamecontrols from "./Gamecontrols";
+import GameControls from "./GameControls";
 import ReactDOM from "react-dom";
 import { playButtonSound, shuffle } from "../utils/helpers";
 export default class Gameboard extends Component {
@@ -111,7 +111,6 @@ export default class Gameboard extends Component {
         computerMoves: color
       },
       () => {
-        // console.log(color);
         callback();
       }
     );
@@ -127,7 +126,6 @@ export default class Gameboard extends Component {
         });
       }
     }
-    // return true;
   };
   computerMoveTracker = status => {
     let moveTrack = status ? 1 : 0;
@@ -291,8 +289,8 @@ export default class Gameboard extends Component {
             <div className="gameboard">
               <p className="scoreFont">{this.state.count}</p>
             </div>
-            <Gamecontrols onClick={this.simonOn} />
-            <Gamecontrols onClick={this.strictOn} />
+            <GameControls onClick={this.simonOn} />
+            <GameControls onClick={this.strictOn} />
 
           </div>
           <div className="text-container">
